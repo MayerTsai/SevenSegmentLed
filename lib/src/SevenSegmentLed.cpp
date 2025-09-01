@@ -32,10 +32,6 @@ SevenSegmentLed::SevenSegmentLed(int pina = 2, int pinb = 3, int pinc = 4, int p
   clearDisplay();
 }
 
-SevenSegmentLed::~SevenSegmentLed()
-{
-}
-
 void SevenSegmentLed::clearDisplay()
 {
   for (int i = 0; i < 8; i++)
