@@ -41,7 +41,7 @@ void seven_segment_led_driver::digital_cycle()
     // do something here
     _last_number++;
     if (_last_number > 9)
-      _last_number = 0;
+      _last_number %= 10;
     _led->displayNumber(_last_number);
 
     _last_blink_time = now; // reset the the recorded time to now
