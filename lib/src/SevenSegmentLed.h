@@ -13,7 +13,7 @@ private:
 
 public:
   SevenSegmentLed(int, int, int, int, int, int, int, int);
-  ~SevenSegmentLed();
+  ~SevenSegmentLed() = default;
   SevenSegmentLed(const SevenSegmentLed &) = delete;            // Disable copy constructor
   SevenSegmentLed &operator=(const SevenSegmentLed &) = delete; // Disable assignment operator
 
